@@ -53,26 +53,30 @@
 
             <div class="nome_cognome d-flex column">
                 <label for="">Nome Cognome</label>
-                <input type="text">
+                <input type="text" value="" name="name" id="full-name" placeholder="Nome e cognome">
             </div>
           
             <div class="km_percorrere d-flex column">
                <label for="">Km da percorrere</label>
-               <input type="text">
+               <input type="number" class="km" id="km" placeholder="Inserisci i km">
             </div>
            
 
             <div class="eta d-flex column">
                <label for="">Fascia d'eta'</label>
-               <input type="text">
+               <select name="fascia" id="fascia">
+                 <option value="minorenne">Minorenne</option>
+                 <option value="maggiorenne">Maggiorenne</option>
+                 <option value="over65">Over 65</option>
+               </select>
             </div>
            
           </div>
           <div class="buttons">
-            <button class="btn btn-default">
+            <button class="btn btn-default" id="btn_genera">
               Genera
             </button>
-            <button class="btn btn-default">
+            <button class="btn btn-default" id="btn_annulla">
               Annulla
             </button>
           </div>
@@ -88,13 +92,13 @@
         <div class="card_bottom d-flex column">
           <span><strong>DETTAGLIO PASSEGGERI</strong></span>
           <div class="dettaglio_passeggeri d-flex">
-            <div class="nome_passeggero">
+            <div class="passeggero">
               <table style="width:100%">
                 <tr>
                   <th>Nome Passeggero</th>
                 </tr>
                 <tr>
-                  <td>Pippo</td>
+                  <td id="nome_passeggero"></td>
                 </tr>
               </table>
             </div>
@@ -107,10 +111,10 @@
                 <th>Costo Biglietto</th>
               </tr>
               <tr>
-                <td>Sconto Minorenne</td>
-                <td>7</td>
-                <td>97928</td>
-                <td>3.36euri</td>
+                <td id="sconto"></td>
+                <td id="carrozza"></td>
+                <td id="codice_cp"></td>
+                <td id="ticket_price"></td>
               </tr>
               </table>
             </div>
