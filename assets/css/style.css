@@ -3,3 +3,65 @@
   padding: 0;
   box-sizing:border-box;
 }
+
+
+body {
+  background-color: lightcoral;
+}
+
+h1 {
+  color: white;
+}
+
+/* utility class */
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+
+/* /utility class */
+
+
+/* CALCOLAPREZZO */
+#calcolaprezzo {
+  width: 60%;
+  height: 30%;
+}
+
+.card_top {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  
+}
+
+.inputs {
+  width: 80%;
+  justify-content: space-around;
+}
+
+.inputs > div > label {
+  text-align: center;
+}
+/* /CALCOLAPREZZO */
+
+
+/* YOURTICKET */
+#your_ticket {
+  width: 60%;
+}
+/* /YOURTICKET */
