@@ -63,5 +63,37 @@ h1 {
 /* YOURTICKET */
 #your_ticket {
   width: 60%;
+  height: 30%;
+}
+
+.card_bottom {
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+
+
+.dettaglio_passeggeri {
+  height: 80%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  justify-content: space-around;
+}
+
+table th,td {
+  padding: 10px;
+}
+
+.nome_passeggero {
+  background-color: grey;
+  width: 30%;
+}
+
+.biglietto_passeggero {
+  width: 70%;
 }
 /* /YOURTICKET */
