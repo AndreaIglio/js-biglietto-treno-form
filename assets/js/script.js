@@ -82,13 +82,15 @@ else {
 
 // CALCOLO NUMERO CARROZZA
 
-bottomCarrozza.innerHTML = Math.floor(Math.random() * 10);
+bottomCarrozza.innerHTML = Math.floor(Math.random() * 10) + 1;
 
 // CALCOLO CODICE CP
 
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
+
+// questa funzione l'ho studiata in passato
 
 bottomCodiceCp.innerHTML = getRndInteger (90000, 99999);
 
@@ -97,7 +99,6 @@ bottomCodiceCp.innerHTML = getRndInteger (90000, 99999);
 
 
 )
-
 
 
 
