@@ -6,12 +6,17 @@
 
 
 body {
-  background-color: lightcoral;
+  background-color: brown;
 }
 
 h1 {
   color: white;
 }
+
+label {
+  color: brown;
+}
+
 
 /* utility class */
 
@@ -29,6 +34,9 @@ h1 {
   flex-direction: column;
 }
 
+.border_brown {
+  border-color: brown;
+}
 
 /* /utility class */
 
@@ -57,6 +65,7 @@ h1 {
 .inputs > div > label {
   text-align: center;
 }
+
 /* /CALCOLAPREZZO */
 
 

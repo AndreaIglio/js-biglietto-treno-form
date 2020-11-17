@@ -1,17 +1,20 @@
+// add style to an element by id using Js
 
+// var elemLabel = document.getElementById('label');
+
+// elemLabel.className = elemLabel.classList + "brown";
+
+
+
+// genero variabili associate all id ----> card_top
 
 var btnGenera = document.getElementById('btn_genera');
 // console.log(btnGenera);
 var btnAnnulla = document.getElementById('btn_annulla');
 // console.log(btnAnnulla);
-
-// genero variabili associate all id ----> card_top
-
-
-
 var fullName = document.getElementById('full-name');
 var kmToRun = document.getElementById('km');
-var fascia = document.getElementById ('fascia');
+var fascia = document.getElementById('fascia');
 
 
 // genero variabili associate all id ----> card_bottom
@@ -41,7 +44,7 @@ function() {
 var fullNameInput = fullName.value;
 // console.log(fullNameInput);
 
-var kmToRunInput = kmToRun.value;
+var kmToRunInput = Math.abs(kmToRun.value);
 // console.log(kmToRunInput);
 
 var fasciaInput = fascia.value;
@@ -82,18 +85,23 @@ else {
 
 // CALCOLO NUMERO CARROZZA
 
-bottomCarrozza.innerHTML = Math.floor(Math.random() * 10) + 1;
 
 // CALCOLO CODICE CP
+
+if (kmToRunInput > 0 && fullNameInput !== "") {
 
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
+bottomCarrozza.innerHTML = Math.floor(Math.random() * 10) + 1;
+}
+else {alert('Fill both name and km form to get the right price and discount');}
+
 // questa funzione l'ho studiata in passato
 
-bottomCodiceCp.innerHTML = getRndInteger (90000, 99999);
 
+bottomCodiceCp.innerHTML = getRndInteger (90000, 99999);
 
 }
 
@@ -113,3 +121,4 @@ document.getElementById('your_ticket').style.display = 'none';
 
 
 )
+

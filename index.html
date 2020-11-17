@@ -52,18 +52,18 @@
           <div class="inputs d-flex">
 
             <div class="nome_cognome d-flex column">
-                <label for="">Nome Cognome</label>
+                <label for="" id="label">Nome Cognome</label>
                 <input type="text" value="" name="name" id="full-name" placeholder="Nome e cognome">
             </div>
           
             <div class="km_percorrere d-flex column">
-               <label for="">Km da percorrere</label>
-               <input type="number" class="km" id="km" placeholder="Inserisci i km">
+               <label for="" id="label">Km da percorrere</label>
+               <input type="number" min="1" class="km" id="km" placeholder="Inserisci i km">
             </div>
            
 
             <div class="eta d-flex column">
-               <label for="">Fascia d'eta'</label>
+               <label for="" id="label">Fascia d'eta'</label>
                <select name="fascia" id="fascia">
                  <option value="minorenne">Minorenne</option>
                  <option value="maggiorenne">Maggiorenne</option>
@@ -73,10 +73,10 @@
            
           </div>
           <div class="buttons">
-            <button class="btn btn-default" id="btn_genera">
+            <button class="btn btn-default border_brown " id="btn_genera">
               Genera
             </button>
-            <button class="btn btn-default" id="btn_annulla">
+            <button class="btn btn-default border_brown" id="btn_annulla">
               Annulla
             </button>
           </div>
