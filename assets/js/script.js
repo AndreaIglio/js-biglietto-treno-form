@@ -35,13 +35,13 @@ btnGenera.addEventListener('click',
 
 function() {
 
-    // MOSTRARE CARD_BOTTOM
+    // MOSTRARE CARD_BOTTOM when click
     document.getElementById('your_ticket').style.display = 'block';
 
 
 // assegno variabili agli id card_bottom based on Input value
 
-var fullNameInput = fullName.value;
+var fullNameInput = fullName.value.toUpperCase();
 // console.log(fullNameInput);
 
 var kmToRunInput = Math.abs(kmToRun.value);
@@ -95,6 +95,7 @@ function getRndInteger(min, max) {
 }
 
 bottomCarrozza.innerHTML = Math.floor(Math.random() * 10) + 1;
+
 }
 else {alert('Fill both name and km form to get the right price and discount');}
 
